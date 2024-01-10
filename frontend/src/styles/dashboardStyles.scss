@@ -1,0 +1,218 @@
+/* dashboardStyles.scss */
+$main-dashboard-width: 1100px; /* Variable for main dashboard width */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C2D48;
+}
+#app-bar {
+    grid-column: 1 / -1; /* Span across all columns */
+    grid-row: 1; /* Positioned in the first row */
+    height: 100%; /* Ensure it fills the entire row */
+}
+
+#contact-requests-container {
+    position: absolute;
+    z-index: 1;
+    width: 300px; /* Width of the search results */
+    height: 200px;
+    right: 0%;
+    background-color: #0C2D48;
+    color: black;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+#conversation-component {
+    display: grid;
+    grid-template-rows: 1fr 9fr; /* 1/10 and 9/10 of the available space */
+    width: 100%; /* Expand over 100% of the available width */
+    max-height: 100%;
+
+    
+    #conversation-content {
+        /* This will take 9/10 of the available space as defined by grid-template-rows */
+        overflow-y: hidden; /* Add scroll for overflow content */
+        // background-color: gray;
+        display: grid;
+
+
+    }
+}
+
+#conversation-messages {
+    display: grid;
+    grid-template-rows: 9fr 1fr; /* 1/10 and 9/10 of the available space */
+    // max-height: 100%;
+    overflow-y: hidden;
+    // background-color: blue;
+
+}
+
+
+#conversation-container {
+    grid-column: 2 / 5; /* Take remaining columns */
+    grid-row: 2 / -1; /* Span from the second to the last row */
+    width: 100%; /* Fill the grid cell */
+    background-color: #0C2D48;
+
+}
+
+
+#list-contacts {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 100%;
+    background-color: #0C2D48;
+}
+
+#list-contact-requests {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 100%;
+    background-color: #0C2D48;
+}
+#list-conversations {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 100%;
+    background-color: #0C2D48;
+}
+
+#list-messages {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: auto;
+    max-height: 100%;
+    background-color: #B1D4E0;
+}
+
+.list-search {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 100%;
+    background-color: #0C2D48;
+}
+.message-container {
+    display: flex;
+    justify-content: flex-start; /* Align children to the start by default */
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.message-sent {
+    background-color: #21B6A8;
+    margin-left: auto; /* Push to the right */
+    border-radius: 5px;
+}
+
+.message-sent:hover {
+    background-color: #75E6DA; /* Color changes to red on hover */
+}
+.message-received {
+    background-color: #18A558;
+    margin-right: auto; /* Push to the left */
+    border-radius: 5px;
+}
+
+#message-sender {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.message {
+    border-radius: 5px;
+    max-width: 80%;
+    min-width: 40%;
+    padding: 5px;
+}
+
+
+#main-dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    grid-template-rows: repeat(10, 1fr); /* Ten equal rows */
+    grid-gap: 5px;
+    height: 100vh;
+    width: $main-dashboard-width; /* Set width using the variable */
+    margin: 0 auto; /* Center the container */
+}
+
+
+.MuiAppBar-root {
+    height: 100%;
+}
+
+#search-results-container {
+    position: absolute;
+    z-index: 1;
+    width: 300px; /* Width of the search results */
+    right: 0px; /* Align right edge to 1100px */
+    background-color: #0C2D48;
+    color: black;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.search-result-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* 20% - 60% - 20% */
+    align-items: center;
+    max-width: 100%;
+
+    .search-result-avatar {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search-result-username {
+      overflow: hidden;
+    }
+
+    .search-result-button {
+      white-space: normal;
+      text-align: center;
+    }
+}
+
+
+#sidebar-container {
+    grid-column: 1; /* Take the first column */
+    grid-row: 2 / -1; /* Span from the second to the last row */
+    width: 100%; /* Fill the grid cell */
+    box-sizing: border-box;
+    overflow: scroll;
+    background-color: #0C2D48;
+
+}
+
+
+#settings-container {
+    position: absolute;
+    z-index: 2; // Higher z-index if needed
+    width: 300px; // Adjust as necessary
+    height: auto; // Adjust as necessary
+    right: 0%;
+    top: 100%; // Positioned just below the AppBar
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow-y: scroll;
+}

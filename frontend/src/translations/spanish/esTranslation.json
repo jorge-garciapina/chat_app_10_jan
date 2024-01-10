@@ -1,0 +1,157 @@
+{
+  "login": {
+    "signIn": "Iniciar sesión",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "noAccount": "¿No tienes cuenta? Regístrate",
+    "networkError": "Error de red. Intenta más tarde.",
+    "unexpectedError": "Ocurrió un error inesperado.",
+    "invalidCredentials": "Usuario o contraseña inválidos"
+  },
+  "register": {
+    "signUp": "Registrarse",
+    "username": "Nombre de usuario",
+    "emailAddress": "Dirección de correo",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "signUpButton": "Registrarse",
+    "alreadyAccount": "¿Ya tienes cuenta? Inicia sesión",
+    "selectAvatar": "Selecciona un avatar",
+    "invalidEmail": "Correo electrónico inválido",
+    "passwordValidation": "La contraseña debe tener al menos 8 caracteres",
+    "passwordsMismatch": "Las contraseñas no coinciden"
+  },
+  "searchcomponent": {
+    "searchPlaceholder": "Buscar...",
+    "noResultsFound": "No se encontraron resultados"
+  },
+  "searchresult": {
+    "sending": "Enviando...",
+    "addFriend": "Añadir",
+    "cancelling": "Cancelando...",
+    "cancelRequest": "Cancelar",
+    "sendMessage": "Mensaje"
+  },
+  "contactrequests": {
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "noRequests": "No hay solicitudes de contacto"
+  },
+  "settingscontainer": {
+    "changeUsername": "Cambiar nombre de usuario",
+    "changePassword": "Cambiar contraseña",
+    "changeAvatar": "Cambiar avatar",
+    "logout": "Cerrar sesión",
+    "changeLanguage": "Cambiar idioma"
+  },
+  "changeusername": {
+    "newUsername": "Nuevo nombre",
+    "updateUsername": "Actualizar",
+    "back": "Volver"
+  },
+  "changepassword": {
+    "infoText": "Después de cambiar la contraseña, inicia sesión nuevamente",
+    "oldPassword": "Contraseña antigua",
+    "newPassword": "Nueva contraseña",
+    "confirmNewPassword": "Confirmar nueva contraseña",
+    "passwordMismatch": "Las contraseñas no coinciden",
+    "changePassword": "Cambiar contraseña",
+    "back": "Volver"
+  },
+  "changeavatar": {
+    "chooseAvatar": "Elige tu nuevo avatar:",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "back": "Volver"
+  },
+  "sidebarcontainer": {
+    "chats": "Chats",
+    "contacts": "Contactos"
+  },
+  "conversations": {
+    "noMessages": "Aún no hay mensajes..."
+  },
+  "creategroupconversationbutton": {
+    "createGroupConversation": "Conversación grupal"
+  },
+  "creategroupconversation": {
+    "conversationName": "Nombre de la conversación",
+    "participants": "Participantes:",
+    "cancel": "Cancelar",
+    "add": "Agregar",
+    "create": "Crear"
+  },
+  "contactlist": {
+    "online": "En línea",
+    "offline": "Desconectado",
+    "noContacts": "No hay contactos disponibles"
+  },"conversation": {
+    "settings": "Configuraciones",
+    "back": "Volver",
+    "settingsLabel": "Configuraciones"
+  },
+  "settingscomponent": {
+    "leave": "Abandonar",
+    "delete": "Eliminar",
+    "modifyConversationName": "Modificar nombre de la conversación",
+    "addUser": "Añadir usuario",
+    "admin": "admin"
+  },
+  "leaveconversation": {
+    "confirmationText": "¿Estás seguro de que quieres dejar esta conversación?",
+    "leaveButton": "Abandonar",
+    "back": "Volver"
+  },
+  "deletechatfromuserprofile": {
+    "confirmationText": "¿Estás seguro de que quieres eliminar esta conversación de tu perfil?",
+    "deleteButton": "Eliminar",
+    "back": "Volver"
+  },
+  "managechatmember": {
+    "removeFromChat": "Eliminar: ",
+    "setAsAdmin": "Nuevo admin: ",
+    "removeAsAdmin": "Eliminar admin: ",
+    "back": "Volver",
+    "confirmRemoval": "Confirmar eliminación del chat",
+    "confirmSetAdmin": "Confirmar como admin",
+    "confirmRemoveAdmin": "Confirmar eliminación como admin",
+    "confirm": "Confirmar"
+  },
+  "changechatname": {
+    "confirmChange": "Confirmar cambio",
+    "back": "Volver"
+  },
+  "addchatmember": {
+    "title": "Añadir miembro al chat",
+    "noFriendsToAdd": "No hay amigos para añadir",
+    "cancel": "Cancelar",
+    "add": "Añadir",
+    "save": "Guardar",
+    "back": "Volver"
+  },
+  "conversationmessages": {
+    "deliveredToAll": "Entregado a todos",
+    "seenByAll": "Visto por todos"
+  },
+  "messageoptions": {
+    "deleteMessage": "Eliminar mensaje",
+    "cancel": "Cancelar",
+    "deliveredTo": "Entregado a",
+    "seenBy": "Visto por"
+  },
+  "sendmessageitem": {
+    "typeMessage": "Escribe un mensaje...",
+    "notPartOfConversation": "Ya no formas parte de esta conversación."
+  },
+  "userstyping": {
+    "isTyping": "está escribiendo",
+    "areTyping": "están escribiendo",
+    "na": "N/D"
+  },
+  "languageselector": {
+    "english": "Inglés",
+    "french": "Francés",
+    "italian": "Italiano",
+    "spanish": "Español"
+  }  
+}

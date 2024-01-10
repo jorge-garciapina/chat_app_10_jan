@@ -1,0 +1,158 @@
+{
+  "login": {
+    "signIn": "Sign in",
+    "username": "Username",
+    "password": "Password",
+    "noAccount": "Don't have an account? Sign Up",
+    "networkError": "Network error. Please try again later.",
+    "unexpectedError": "An unexpected error occurred.",
+    "invalidCredentials": "Invalid username or password"
+  },
+  "register": {
+    "signUp": "Sign up",
+    "username": "Username",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "signUpButton": "Sign Up",
+    "alreadyAccount": "Already have an account? Sign in",
+    "selectAvatar": "Select an Avatar",
+    "invalidEmail": "Invalid Email",
+    "passwordValidation": "Password should contain at least 8 characters",
+    "passwordsMismatch": "Passwords do not match"
+  },
+  "searchcomponent": {
+    "searchPlaceholder": "Search...",
+    "noResultsFound": "No results found"
+  },
+  "searchresult": {
+    "sending": "Sending...",
+    "addFriend": "Add",
+    "cancelling": "Cancelling...",
+    "cancelRequest": "Cancel",
+    "sendMessage": "Message"
+  },
+  "contactrequests": {
+    "accept": "Accept",
+    "reject": "Reject",
+    "noRequests": "No contact requests"
+  },
+  "settingscontainer": {
+    "changeUsername": "Change Username",
+    "changePassword": "Change Password",
+    "changeAvatar": "Change Avatar",
+    "logout": "Logout",
+    "changeLanguage": "Change Language"
+  },
+  "changeusername": {
+    "newUsername": "New Username",
+    "updateUsername": "Update Username",
+    "back": "Back"
+  },
+  "changepassword": {
+    "infoText": "After changing password, login again",
+    "oldPassword": "Old Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "passwordMismatch": "Passwords do not match",
+    "changePassword": "Change Password",
+    "back": "Back"
+  },
+  "changeavatar": {
+    "chooseAvatar": "Choose your new avatar image:",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "back": "Back"
+  },
+  "sidebarcontainer": {
+    "chats": "Chats",
+    "contacts": "Contacts"
+  },
+  "conversations": {
+    "noMessages": "No messages yet..."
+  },
+  "creategroupconversationbutton": {
+    "createGroupConversation": "Group Conversation"
+  },
+  "creategroupconversation": {
+    "conversationName": "Conversation name",
+    "participants": "Participants:",
+    "cancel": "Cancel",
+    "add": "Add",
+    "create": "Create"
+  },
+  "contactlist": {
+    "online": "Online",
+    "offline": "Offline",
+    "noContacts": "No contacts available"
+  },
+  "conversation": {
+    "settings": "Settings",
+    "back": "Back",
+    "settingsLabel": "Settings"
+  },
+  "settingscomponent": {
+    "leave": "Leave",
+    "delete": "Delete",
+    "modifyConversationName": "Modify Conversation Name",
+    "addUser": "Add User",
+    "admin": "admin"
+  },
+  "leaveconversation": {
+    "confirmationText": "Are you sure you want to leave this conversation?",
+    "leaveButton": "Leave",
+    "back": "Back"
+  },
+  "deletechatfromuserprofile": {
+    "confirmationText": "Are you sure you want to delete this conversation from your profile?",
+    "deleteButton": "Delete",
+    "back": "Back"
+  },
+  "managechatmember": {
+    "removeFromChat": "Remove: ",
+    "setAsAdmin": "New admin: ",
+    "removeAsAdmin": "Remove admin: ",
+    "back": "Back",
+    "confirmRemoval": "Confirm removal from chat",
+    "confirmSetAdmin": "Confirm set as admin",
+    "confirmRemoveAdmin": "Confirm removal as admin",
+    "confirm": "Confirm"
+  },
+  "changechatname": {
+    "confirmChange": "Confirm Change",
+    "back": "Back"
+  },
+  "addchatmember": {
+    "title": "Add Chat Member",
+    "noFriendsToAdd": "No friends to add",
+    "cancel": "Cancel",
+    "add": "Add",
+    "save": "Save",
+    "back": "Back"
+  },
+  "conversationmessages": {
+    "deliveredToAll": "Delivered to all",
+    "seenByAll": "Seen by all"
+  },
+  "messageoptions": {
+    "deleteMessage": "Delete Message",
+    "cancel": "Cancel",
+    "deliveredTo": "Delivered to",
+    "seenBy": "Seen by"
+  },
+  "sendmessageitem": {
+    "typeMessage": "Type a message...",
+    "notPartOfConversation": "You are not part of this conversation anymore."
+  },
+  "userstyping": {
+    "isTyping": "is typing",
+    "areTyping": "are typing",
+    "na": "N/A"
+  },
+  "languageselector": {
+    "english": "English",
+    "french": "French",
+    "italian": "Italian",
+    "spanish": "Spanish"
+  }             
+}

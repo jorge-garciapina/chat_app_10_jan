@@ -1,0 +1,68 @@
+import React from "react";
+import Button from "@mui/material/Button";
+import PropTypes from "prop-types";
+import {useTranslation} from "react-i18next";
+import {useRemoveChatMember, useRemoveAdminFromConversation} from "./../../../graphqlOperations/convClient";
+import {Box, Typography} from "@mui/material";
+
+const LeaveConversation = ({conversationId, username, adminsInConversation, onBack, onClose}) => {
+  const {t} = useTranslation();
+  const removeChatMember = useRemoveChatMember();
+  const removeAdminFromConversation = useRemoveAdminFromConversation();
+
+  const handleLeave = async () => {
+    try {
+      await removeChatMember(conversationId, username);
+      if (adminsInConversation.includes(username)) {
+        await removeAdminFromConversation(conversationId, [username]);
+      }
+      onBack();
+    } catch (error) {
+      console.error("Error leaving conversation:", error);
+    }
+  };
+
+  return (
+    <Box sx={{
+      padding: "20px",
+      background: "#0C2D48",
+      borderRadius: "10px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      boxShadow: 3,
+      maxWidth: 400,
+      margin: "auto"
+    }}>
+      <Typography variant="h6" sx={{color: "#FFFFFF", marginBottom: "20px"}}>
+        {t("leaveconversation.confirmationText")}
+      </Typography>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={handleLeave}
+        sx={{"backgroundColor": "#75E6DA", "&:hover": {backgroundColor: "#B1D4E0"}}}
+      >
+        {t("leaveconversation.leaveButton")}
+      </Button>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={onClose}
+        sx={{"backgroundColor": "#75E6DA", "&:hover": {backgroundColor: "#B1D4E0"}}}
+      >
+        {t("leaveconversation.back")}
+      </Button>
+    </Box>
+  );
+};
+
+LeaveConversation.propTypes = {
+  conversationId: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  adminsInConversation: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onBack: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
+export default LeaveConversation;
